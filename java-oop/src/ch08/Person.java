@@ -94,7 +94,7 @@ public class Person {
 	public void m15a(Data d) {
 		d.y = d.y*100;
 	}
-	//1-6) 리턴타입void / 매개변수:class[]
+	//1-6) 리턴타입:void / 매개변수:class[]
 	public void m16a(Data[] datas) {
 		for(int i=0; i<datas.length; i++) {
 			if(datas[i].x % 2==0) {
