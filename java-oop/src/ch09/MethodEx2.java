@@ -65,14 +65,14 @@ public class MethodEx2 {
 	// 매개타입:int
 	//252->{2, 5, 2}
 	public int[] m5a(int num) {
-	    int tmp = num;
-	    int length = 0;
-	    while (num > 0) {
+	    int tmp = num; 
+	    int length = 0; // 자리수(배열 길이)를 셀 변수
+	    while (num > 0) { //숫자 하나씩 뽑아내기위한 코드
 	    num /= 10; //num=num/10;
 	    length++; 
 	}
-	    int[] result = new int[length];
-	    for (int j = length - 1; j >= 0; j--) {
+	    int[] result = new int[length];  // 자릿수 크기만큼 배열 생성
+	    for (int j = length - 1; j >= 0; j--) { // 뒤에서부터 채움
 	        result[j] = tmp % 10;
 	        tmp = tmp / 10;
 	    }
